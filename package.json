@@ -1,0 +1,8 @@
+{
+  "name": "hoxhahandwerk",
+  "private": true,
+  "description": "Static Hoxha Handwerk site — no-op build for Cloudflare Pages when dashboard Build command is npm run build",
+  "scripts": {
+    "build": "exit 0"
+  }
+}
