@@ -1,0 +1,6 @@
+# Cloudflare Pages — static site at repo root (no framework build).
+# Git builds still need the dashboard Build command cleared or set to `exit 0`
+# (see README). This file sets the publish/output directory for Pages/Wrangler.
+name = "hoxhahandwerk"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "."

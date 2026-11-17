@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Hoxha Handwerk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/logo-icon.png">
+</head>
+<body>
+  <header class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <div class="navbar__tray">
+        <a href="index.html" class="navbar__logo">
+          <img src="assets/logo.png" alt="Hoxha Handwerk" width="48" height="48">
+          <span class="navbar__brand">Hoxha Handwerk</span>
+        </a>
+        <nav class="navbar__menu navbar__menu--simple" aria-label="Navigation" data-i18n-aria="nav_main">
+          <a href="index.html" data-i18n="nav_home">Startseite</a>
+          <a href="index.html#kontakt" class="btn btn--sm btn--primary" data-i18n="nav_contact">Kontakt</a>
+        </nav>
+        <div class="lang" id="langSwitch">
+          <button type="button" class="lang__btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false" data-i18n-aria="lang_label">
+            <img class="lang__flag-img" id="langFlagImg" src="assets/flags/de.png" alt="" width="22" height="16" decoding="async">
+            <svg class="lang__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <ul class="lang__menu" id="langMenu" role="listbox" hidden></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container legal">
+    <h1 data-i18n="privacy_title">Datenschutzerklärung</h1>
+
+    <h2 data-i18n="privacy_h1">1. Verantwortlicher</h2>
+    <p data-i18n="privacy_p1" data-i18n-html="true">
+      Hoxha Handwerkerservice<br>
+      Bauleiter: Valton Hoxha<br>
+      53879 Euskirchen, Deutschland<br>
+      E-Mail: handwerkhoxha@gmail.com<br>
+      Telefon: +49 152 08435423
+    </p>
+
+    <h2 data-i18n="privacy_h2">2. Erhebung und Speicherung personenbezogener Daten</h2>
+    <p data-i18n="privacy_p2">
+      Beim Besuch unserer Website werden automatisch Informationen allgemeiner Natur erfasst (Server-Logfiles). Diese umfassen Browsertyp, verwendetes Betriebssystem, Referrer URL, Hostname und Uhrzeit der Serveranfrage.
+    </p>
+
+    <h2 data-i18n="privacy_h3">3. Kontaktformular</h2>
+    <p data-i18n="privacy_p3">
+      Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+    </p>
+    <p data-i18n="privacy_p3b">Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO.</p>
+
+    <h2 data-i18n="privacy_h4">4. Ihre Rechte</h2>
+    <p data-i18n="privacy_p4">Sie haben jederzeit das Recht:</p>
+    <ul>
+      <li data-i18n="privacy_li1">Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten zu erhalten (Art. 15 DSGVO)</li>
+      <li data-i18n="privacy_li2">Berichtigung unrichtiger Daten zu verlangen (Art. 16 DSGVO)</li>
+      <li data-i18n="privacy_li3">Löschung Ihrer Daten zu verlangen (Art. 17 DSGVO)</li>
+      <li data-i18n="privacy_li4">Einschränkung der Verarbeitung zu verlangen (Art. 18 DSGVO)</li>
+      <li data-i18n="privacy_li5">Der Verarbeitung zu widersprechen (Art. 21 DSGVO)</li>
+      <li data-i18n="privacy_li6">Datenübertragbarkeit zu verlangen (Art. 20 DSGVO)</li>
+    </ul>
+
+    <h2 data-i18n="privacy_h5">5. SSL-Verschlüsselung</h2>
+    <p data-i18n="privacy_p5">
+      Diese Seite nutzt aus Sicherheitsgründen eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt.
+    </p>
+
+    <h2 data-i18n="privacy_h6">6. Cookies</h2>
+    <p data-i18n="privacy_p6">
+      Unsere Website verwendet keine Tracking-Cookies. Es werden lediglich technisch notwendige Cookies eingesetzt, sofern erforderlich.
+    </p>
+
+    <h2 data-i18n="privacy_h7">7. Externe Dienste</h2>
+    <p data-i18n="privacy_p7">
+      Wir nutzen Google Fonts zur einheitlichen Darstellung von Schriftarten. Beim Aufruf lädt Ihr Browser die benötigten Schriftarten direkt von Google-Servern.
+    </p>
+
+    <h2 data-i18n="privacy_h8">8. Änderung der Datenschutzerklärung</h2>
+    <p data-i18n="privacy_p8">
+      Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.
+    </p>
+
+    <p style="margin-top: 40px;">
+      <a href="index.html" data-i18n="privacy_back">← Zurück zur Startseite</a>
+    </p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bottom">
+      <div class="container">
+        <p data-i18n="footer_copy">&copy; 2026 Hoxha Handwerkerservice. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/i18n.js"></script>
+</body>
+</html>
