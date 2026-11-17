@@ -39,6 +39,6 @@ In **Workers & Pages → your project → Settings → Builds & deployments** (o
 | Build command | leave **blank**, or use `exit 0` |
 | Build output directory | `/` or `.` (repo root where `index.html` is) |
 
-Do **not** use `npm run build` — that fails with `ENOENT …/package.json`.
+Do **not** use `npm run build` unless you leave the dashboard on that preset — the repo includes a minimal `package.json` whose `build` script is `exit 0` so that preset still succeeds.
 
 After saving, retry the deployment (or push a new commit).
