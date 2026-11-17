@@ -16,8 +16,29 @@ python3 -m http.server 5501
 
 Or open `index.html` with VS Code Live Server (port `5501` in `.vscode/settings.json`).
 
-## Pages
+## Site pages
 
 - `index.html` — main site
 - `impressum.html` — imprint
 - `datenschutz.html` — privacy policy
+
+## Cloudflare Pages
+
+This is a **static** site: `index.html` lives at the repo root. There is no `package.json` and no `npm run build`.
+
+`wrangler.toml` sets `pages_build_output_dir = "."` for Wrangler / Pages output.
+
+### One-time dashboard settings (required)
+
+In **Workers & Pages → your project → Settings → Builds & deployments** (or the deploy setup screen):
+
+| Setting | Value |
+| --- | --- |
+| Framework preset | None / None |
+| Root directory | `/` (leave blank / repository root) |
+| Build command | leave **blank**, or use `exit 0` |
+| Build output directory | `/` or `.` (repo root where `index.html` is) |
+
+Do **not** use `npm run build` — that fails with `ENOENT …/package.json`.
+
+After saving, retry the deployment (or push a new commit).
